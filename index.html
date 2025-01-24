@@ -6,11 +6,13 @@
     <title>My Personal Website</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
 </head>
 <body>
     <!-- Header Section -->
     <header id="home">
+        <!-- Navigation Bar -->
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -19,20 +21,26 @@
                 <li><a href="#education">Education</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#certificates">Certifications</a></li>
+                <li><a href="#resume">My-CV</a></li>
                 <li><a href="#contact">Contact</a></li>
+                
             </ul>
         </nav>
+
+        <!-- Hero Section with Background Image -->
         <div class="hero">
-            <h1>Welcome to My Portfolio</h1>
-            <p>I am Teklu Abebe, a Computer Science and Engineering graduate specializing in enterprise network deployment.</p>
+            <div class="content">
+                <h1>Welcome to My Portfolio</h1>
+                <p>I am Teklu Abebe, a Computer Science and Engineering graduate specializing in enterprise network deployment.</p>
+            </div>
         </div>
     </header>
 
     <!-- About Section -->
     <section id="about">
         <h2>About Me</h2>
-        <p>I hold a Bachelor's degree in Computer Science and Engineering from Adama science and Technology university. With expertise in network architecture, virtualization, and security, I deliver scalable enterprise solutions that align with business goals.</p>
+        <p>I hold a Bachelor's degree in Computer Science and Engineering from Adama Science and Technology University. With expertise in network architecture, virtualization, and security, I deliver scalable enterprise solutions that align with business goals.</p>
     </section>
 
     <!-- Skills Section -->
@@ -41,7 +49,7 @@
         <div class="skills-container">
             <h3>Technical Skills</h3>
             <ul>
-                <li>Programming: Python, Java, C++, JavaScript</li>
+                <li>Programming: Python, Java, C++, JavaScript, MERN</li>
                 <li>Networking: VLANs, routing, VPNs, SD-WAN</li>
                 <li>Tools: Cisco IOS, Nutanix AHV, VMware, AWS</li>
                 <li>OS: Windows Server, Linux (Ubuntu, CentOS)</li>
@@ -61,7 +69,7 @@
     <section id="education">
         <h2>Education</h2>
         <p>Bachelor of Science in Computer Science and Engineering</p>
-        <p>adama science and Technology university, 2023</p>
+        <p>Adama Science and Technology University, 2023</p>
         <h3>Key Courses:</h3>
         <ul>
             <li>Data Structures and Algorithms</li>
@@ -88,6 +96,9 @@
     <section id="projects">
         <h2>Projects</h2>
         <ul>
+            <li><strong>Fleet Administration System with Live GPS Tracking:</strong> Developed and implemented a robust fleet management solution with real-time GPS tracking to optimize vehicle operations, monitor location, speed, and route, enhancing efficiency and security.</li>
+            <li><strong>Employee Management System:</strong> Designed and deployed an employee management system to streamline driver information, performance tracking, and communication.</li>
+            <li><strong>Attendance Recording System:</strong> Developed an automated attendance recording system for accurate tracking of driver work hours, ensuring compliance and payroll accuracy.</li>
             <li><strong>Enterprise Network Deployment:</strong> Designed and implemented secure, high-performance networks for multi-site enterprises.</li>
             <li><strong>Virtualization with Nutanix AHV:</strong> Migrated on-premise servers to hyper-converged infrastructure, enhancing resource utilization.</li>
             <li><strong>Cybersecurity Enhancement:</strong> Deployed firewalls and intrusion detection systems for improved network security.</li>
@@ -95,45 +106,82 @@
     </section>
 
     <!-- Certifications Section -->
-    <section id="certifications">
-        <h2>Certifications</h2>
+    <section id="certificates">
+        <h2>Certificates</h2>
+        <p>
+            I have earned several certifications. You can view my certificates by clicking the links below:
+        </p>
         <ul>
-            <li>CompTIA A+ Certification</li>
-            <li>Cisco Certified Network Associate (CCNA)</li>
-            <li>Nutanix Certified Professional (NCP)</li>
-            <li>AWS Certified Solutions Architect</li>
+            <li>
+                <a href="https://www.mygreatlearning.com/certificate/SBKZTUDS" target="_blank" rel="noopener noreferrer">
+                    Certificate 1: Network Security
+                </a>
+            </li>
+            <li>
+                <a href="https://www.mygreatlearning.com/certificate/GGUZTGUW" target="_blank" rel="noopener noreferrer">
+                    Certificate 2: Virtual Cloud Computing
+                </a>
+            </li>
+            <li>
+                <a href="https://www.mygreatlearning.com/certificate/ENKAGONW" target="_blank" rel="noopener noreferrer">
+                    Certificate 3: Advanced Cybersecurity - Threats and Governance
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.mygreatlearning.com/certificate/ZAUXXGTU" target="_blank" rel="noopener noreferrer">
+                    Certificate 4: Machine Learning With Python
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.mygreatlearning.com/certificate/DDKLLMYQ" target="_blank" rel="noopener noreferrer">
+                    Certificate 5: Cloud Fooundations-Advanced
+                </a>
+            </li>
+
+            
+            <li>
+                <a href="https://drive.google.com/file/d/1E7X6Yr8BeEnp3kFnynpMkqUUjHnxnUbF/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+                    Certificate 6: Project Management
+                </a>
+            </li>
+            
+
         </ul>
     </section>
-<!--resume download-->
-    <section id="resume">
-        <h2>Resume</h2>
-        <p>Download my professional resume in PDF format:</p>
-        <button id="download-resume">Download Resume</button>
-    </section>
     
+
+    <section id="resume">
+        <h2>Download My CV</h2>
+        <p>
+            You can download my CV by clicking the button below:
+        </p>
+        <button id="download-resume">Download CV</button>
+    </section>
 
     <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:your.email@example.com">tekluabebe05@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">www.linkedin.com/in/tekluabebe2129</a></p>
-        <p>GitHub: <a href="https://github.com/yourprofile" target="_blank">https://github.com/tekluabebe</a></p>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit">Send</button>
+        <form id="contact-form">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+      
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
+      
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+      
+          <button type="submit">Send Message</button>
         </form>
-    </section>
+      </section>
+      
 
     <footer>
         <p>&copy; Teklu Abebe 2025. All rights reserved.</p>
     </footer>
 </body>
 </html>
+
+
