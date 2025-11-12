@@ -189,12 +189,43 @@ form button:hover {
 
 /* Footer Styles */
 footer {
-    text-align: center;
-    padding: 10px 0;
-    background: #333;
-    color: #fff;
-    margin-top: 20px;
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 40px;
 }
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-icon img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.footer-icon img:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+.footer-container p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -277,3 +308,4 @@ form {
     background: #555;
   }
   
+
