@@ -211,8 +211,8 @@ footer {
 }
 
 .footer-icon img {
-  width: 12px;   /* smaller icon width */
-  height: 12px;  /* smaller icon height */
+  width: 25px;   /* smaller icon width */
+  height: 25px;  /* smaller icon height */
   transition: transform 0.3s, opacity 0.3s;
 }
 
@@ -309,6 +309,7 @@ form {
     background: #555;
   }
   
+
 
 
 
