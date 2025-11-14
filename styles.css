@@ -7,7 +7,9 @@ body {
     color: #333;
     background-color: #f4f4f4;
 }
-html, body {
+
+html,
+body {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -16,7 +18,7 @@ html, body {
 
 /* Header Styles */
 header {
-    background: #333;
+    background: #70be5d;
     color: #fff;
     padding: 1rem 0;
     text-align: center;
@@ -43,7 +45,7 @@ header nav ul li a {
 #certificates {
     margin: 20px auto;
     padding: 20px;
-    background: #fff;
+    background: f4f1de;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     max-width: 800px;
@@ -82,11 +84,14 @@ header nav ul li a {
 /* Hero Section Styles */
 .hero {
     position: relative;
-    height: 80vh; /* Adjusted height for a smaller image */
-    background-image: url('myyyy.jpg'); /* Replace with your photo */
+    height: 80vh;
+    /* Adjusted height for a smaller image */
+    background-image: url('myyyy.jpg');
+    /* Replace with your photo */
     background-size: cover;
     background-position: center;
-    z-index: 0; /* Keeps the background behind the content */
+    z-index: 0;
+    /* Keeps the background behind the content */
 }
 
 /* Background overlay */
@@ -97,21 +102,27 @@ header nav ul li a {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay to improve contrast */
-    z-index: 1; /* Overlay above the background but below text */
+    background: rgba(0, 0, 0, 0.5);
+    /* Dark overlay to improve contrast */
+    z-index: 1;
+    /* Overlay above the background but below text */
 }
 
 .content {
     position: absolute;
-    top: 50%; /* Ensures the content is centered vertically */
+    top: 50%;
+    /* Ensures the content is centered vertically */
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white; /* White text for better visibility */
+    color: white;
+    /* White text for better visibility */
     text-align: center;
-    z-index: 2; /* Ensures text is above overlay */
+    z-index: 2;
+    /* Ensures text is above overlay */
 }
 
-h1, p {
+h1,
+p {
     margin: 0;
     padding: 10px;
 }
@@ -119,12 +130,14 @@ h1, p {
 .hero h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
-    text-shadow: 2px 2px 4px rgba(16, 2, 2, 0.5); /* Added text shadow for better readability */
+    text-shadow: 2px 2px 4px rgba(16, 2, 2, 0.5);
+    /* Added text shadow for better readability */
 }
 
 .hero p {
     font-size: 1.2rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Added text shadow for better readability */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* Added text shadow for better readability */
 }
 
 /* Section Styles */
@@ -144,7 +157,8 @@ section h2 {
     padding-bottom: 5px;
 }
 
-section p, section ul {
+section p,
+section ul {
     font-size: 1rem;
     margin: 10px 0;
 }
@@ -168,7 +182,9 @@ form label {
     font-weight: bold;
 }
 
-form input, form textarea, form button {
+form input,
+form textarea,
+form button {
     margin-bottom: 10px;
     padding: 10px;
     border: 1px solid #ccc;
@@ -188,13 +204,39 @@ form button:hover {
 }
 
 /* Footer Styles */
+/* Footer Styles */
+/* Footer Styles */
 footer {
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
     background: #333;
     color: #fff;
     margin-top: 20px;
 }
+
+/* Social Icons in Footer */
+.footer-icons {
+    margin-top: 10px;
+}
+
+.footer-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-icons img {
+    width: 28px;
+    height: 28px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effect (zoom only, no color change) */
+.footer-icons img:hover {
+    transform: scale(1.2);
+}
+
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -215,14 +257,19 @@ footer {
 header nav ul li a {
     color: #fff;
     text-decoration: none;
-    padding: 10px 15px; /* Adds some padding for better clickability */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+    padding: 10px 15px;
+    /* Adds some padding for better clickability */
+    transition: background-color 0.3s, color 0.3s;
+    /* Smooth transition for hover effects */
 }
 
 header nav ul li a:hover {
-    background-color: #0643fc; /* Change to your desired hover background color */
-    color: #fff; /* Change to your desired hover text color */
-    border-radius: 5px; /* Optional: adds rounded corners to the hover effect */
+    background-color: #0643fc;
+    /* Change to your desired hover background color */
+    color: #fff;
+    /* Change to your desired hover text color */
+    border-radius: 5px;
+    /* Optional: adds rounded corners to the hover effect */
 }
 
 
@@ -248,32 +295,32 @@ form {
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  form label {
+}
+
+form label {
     font-weight: bold;
     margin-bottom: 5px;
     display: block;
-  }
-  
-  form input, form textarea {
+}
+
+form input,
+form textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
-  }
-  
-  form button {
+}
+
+form button {
     background: #333;
     color: #fff;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-  }
-  
-  form button:hover {
+}
+
+form button:hover {
     background: #555;
-  }
-  
+}
